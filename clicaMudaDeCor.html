@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+
+    <h1>Manipulando estilos</h1>
+    <button type="button" onclick="modificaEstilo('#FF0000')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00FF00')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000FF')">Azul</button>
+    <hr>
+   <div style="border: solid 1px #000;width: 100px;height: 100px;" id="colorido"> 
+
+   </div>
+</head>
+<body>
+    <script>
+        function modificaEstilo (corDeFundo){
+            document.getElementById("colorido").style.background = corDeFundo
+        }
+    </script>
+</body>
+</html>
